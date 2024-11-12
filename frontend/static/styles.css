@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff4757; /* Bright Red */
+    font-size: 2.5em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.image-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 45%;
+    height: 200px;
+    background-color: #d1d8e0;
+    background-size: cover;
+    border: 2px solid #ff6348; /* Tomato */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mask {
+    width: 45%;
+    height: 200px;
+    background-color: #d1d8e0;
+    background-size: cover;
+    border: 2px solid #1e90ff; /* Dodger Blue */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.label-box {
+    background-color: #fffa65; /* Light Yellow */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    color: #2ecc71; /* Bright Green */
+    font-weight: bold;
+}
+
+.total-count {
+    color: #ff6348; /* Tomato */
+    font-weight: bold;
+}
+
+#accuracyLabel {
+    color: #3498db; /* Bright Blue */
+}
+
+#precisionLabel {
+    color: #e74c3c; /* Bright Red */
+}
+
+#recallLabel {
+    color: #f39c12; /* Bright Orange */
+}

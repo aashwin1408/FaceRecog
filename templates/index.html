@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison with Mask Overlay</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+
+<style>
+#buttonx{
+
+background-color:#0000ff;
+border-radius:50%;
+padding:20px;
+color:#ffffff;
+font-size:21px;
+font-weight:bolder;
+}
+
+
+#buttonx:hover{
+
+background-color:#ff0000;
+font-size:23px;
+
+
+
+}
+
+
+</style>
+
+
+ <h1>Facial Recognition Image Comparison</h1>       
+
+       
+
+
+ <div class="progress-bar" id="progressBar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="image-section">
+            <div id="image1" class="image-container"></div>
+            <div id="image2" class="image-container"></div>
+        </div>
+
+        
+
+<div class="mask-section">
+            <div id="mask1" class="mask-container"></div>
+            <div id="mask2" class="mask-container"></div>
+
+
+        </div>
+
+<style>
+
+.results-section{
+
+display:flex;
+justify-content:space-between;
+
+}
+
+.init{
+
+background-color:#ffffff;
+opacity : .68;
+padding:10px;
+border-radius:12px;
+border:5px, solid , #000000;
+color:#000000
+
+}
+
+
+.result{
+
+background-color:#ffffff;
+opacity : .68;
+padding:10px;
+border:5px, solid;
+border:5px, solid , #000000;
+border-radius:12px;
+color:#000000
+
+
+}
+
+.metrics-section{
+
+background-color:#ffffff;
+opacity : .68;
+padding:10px;
+border:5px, solid , #000000;
+border-radius:12px;
+color:#000000
+
+
+}
+
+
+
+
+
+</style>
+        
+
+
+
+
+<div  class="results-section">
+
+<div class="init">
+<button id="buttonx" onclick="startx()">Init</button>
+
+            <p id="totalCount">Total Comparisons: 0</p>
+
+        </div>
+
+
+<div class="result" >
+ <p id="comparisonResult">Comparison Result: </p>
+           <span> <p style="color:#000000;font-weight:bolder;font-size:20px" id="actualLabel">Actual: </p></span>
+           <span> <p style="color:#000000;font-weight:bolder;font-size:20px" id="predictedLabel">Predicted: </p></span>
+         <p style="margin-top:20px;color:#000000;font-weight:bolder;font-size:20px">&sect; Same - 0  | Dissimmilar - 1 &sect; </p>
+
+</div>
+
+
+        <div class="metrics-section">
+            <p style="color:#000000" id="accuracyLabel">Accuracy: 0%</p>
+            <p  style="color:#000000" id="precisionLabel">Precision: 0%</p>
+            <p style="color:#000000" id="recallLabel">Recall: 0%</p>
+        </div>
+
+       
+    </div>
+
+    <script src="../static/script.js"></script>
+
+</body>
+</html>
